@@ -27,4 +27,33 @@ To run this project locally, you will need [Node.js](https://nodejs.org/) and [M
 ```bash
 git clone https://github.com/mmassey1084/Dynamic-Paws-and-Forever.git
 cd paws-and-forever
-<pre> ``` ## Usage Instructions Install dependencies: npm install Set up the database: Import the following SQL files into your MySQL server: - animaladoptiondb_dog.sql - animaladoptiondb_adopter.sql You can use MySQL Workbench or run: mysql -u your_username -p < animaladoptiondb_dog.sql mysql -u your_username -p < animaladoptiondb_adopter.sql Run the server: Make sure your MySQL credentials and file paths are correct in app1.js, then start the backend server: node app1.js View the site: Open index.html in your browser, or if served dynamically, go to http://localhost:3000 ``` </pre>
+
+```
+## Usage Instructions
+
+Install dependencies:
+```
+npm install
+```
+
+Set up the database:
+Import the following SQL files into your MySQL server:
+- animaladoptiondb_dog.sql
+- animaladoptiondb_adopter.sql
+
+You can use MySQL Workbench or run:
+```
+mysql -u your_username -p < animaladoptiondb_dog.sql
+mysql -u your_username -p < animaladoptiondb_adopter.sql
+```
+
+Run the server:
+Make sure your MySQL credentials and file paths are correct in app1.js, then start the backend server:
+```
+node app1.js
+```
+
+View the site:
+Open index.html in your browser, or if served dynamically, go to http://localhost:3000
+```
+```
