@@ -6,16 +6,22 @@ This repository contains a full-stack web application designed for an animal ado
 
 ## Repository Contents
 
-- `index.html`: The homepage with animated intro, countdown timer, and adoption portal link.
-- `adoptionPage.html`: Displays all adoptable dogs dynamically pulled from the server.
-- `addDog.html`: Admin page to add new dogs to the system with image upload support.
-- `styles.css` & `adoptionPage.css`: Custom styles for the site’s pages.
-- `script.js`: Controls the homepage countdown, animations, and page transitions.
-- `adoptionPage.js`, `addDogPage.js`: JavaScript to fetch, display, and add dogs.
-- `upload/`: Stores uploaded dog images.
-- `node_modules/`: Contains all required Node.js packages.
-- `package.json` & `package-lock.json`: Define and lock down Node.js dependencies.
-- `animaladoptiondb_dog.sql` & `animaladoptiondb_adopter.sql`: MySQL schemas for backend database tables.
+Name                | Description  
+-------------------|-------------  
+`README.md`         | Project overview and usage instructions  
+`app1.js`           | Node.js backend server for handling routes and database logic  
+`package.json`      | Lists project dependencies and scripts  
+`package-lock.json` | Dependency lockfile for consistent installs  
+`pets/`             | Contains all static frontend files (HTML, CSS, JS, images)  
+`uploads/`          | Stores uploaded dog images  
+`sqlfile/`          | Folder containing SQL database schema files  
+`body-parser/`      | Node.js module for parsing incoming request bodies  
+`cookie/`           | Node.js module to handle cookies  
+`cors/`             | Node.js middleware for Cross-Origin Resource Sharing  
+`express/`          | Web framework used to build server APIs  
+`http-errors/`      | Module for creating HTTP error responses  
+`multer/`           | Middleware for handling multipart/form-data (used for image uploads)  
+`mysql/`            | Node.js driver for MySQL databases
 
 ---
 
