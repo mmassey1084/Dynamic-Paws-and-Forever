@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Dog</title>
+    <link rel="stylesheet" href="/css/adoptionPage.css">
+</head>
+<body>
+    <header>
+        <img src="/images/logo2.jpg" id="companyLogo" alt="company logo">
+        <nav>
+            <ul id="headerNav">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/addDog.html">Add Dog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/html/adoptionPage.html" target="_blank">Adopt</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <section>
+        <h2>Add dogs to our shelter</h2>
+        <form action="/addDog" method="POST" id="addDog" enctype="multipart/form-data">
+            <div class="formFlexItem">
+                <label for="dogName">Dogs Name:</label>
+                <input type="text" id="dogName" name="dogName" required>
+            </div>
+            <div class="formFlexItem">
+                <label for="dogBreed">Dogs Breed:</label>
+                <input type="text" id="dogBreed" name="dogBreed" required>
+            </div>
+            <div class="formFlexItem">
+                <label for="dogAge">Dogs Age:</label>
+                <input type="number" id="dogAge" name="dogAge" required>
+            </div>
+            <div class="formFlexItem">
+                <label for="dogImage">Upload image of dog:</label>
+                <input type="file" id="dogImage" name="dogImage" accept="image/*" />
+            </div>
+            <button type="submit" value="submit" id="submitBtn">Submit</button>
+        </form>
+    </section>
+    <section id="dogTableSection">
+        <h2>Search Dogs</h2>
+        <input type="text" id="searchBox" placeholder="Search by Name or Breed.">
+        <table id="dogTable">
+            <thead>
+                <tr>
+                    <th>Image of Dog</th>
+                    <th>Dog Name</th>
+                    <th>Breed</th>
+                    <th>Age (In Years)</th>
+                    <th>Hit delete if dog is adopted</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <nav>
+            <ul id="footerNav">
+                <li><a href="html/adoptionPage.html">Available Pups</a></li>
+                <li><a href="#help">Help</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact/FAQ</a></li>
+            </ul>
+        </nav>
+        <h3>Follow Us</h3>
+        <div id="flex-container3">
+            <a href="#facebook" class="FacebookLogo"><img src="/images/Facebook_logo.png" alt="Facebook logo" class="FacebookLogo"></a>
+            <a href="#instagram" class="instagramLogo"><img src="/images/instagram-logo.jpg" alt="instagram logo" class="instagramLogo"></a>
+            <a href="#tikTok" class="tikTokLogo"><img src="/images/tik-tok-logo.png" alt="tik-tok logo" class="tikTokLogo"></a>
+        </div>
+        <p> Paws and Forever Adoption Center is a 501(c)(3) nonprofit organization in Oklahoma.</p>
+        <p>Copyright &copy 2017–2020 Paws and Forever Adoption Center. All Rights Reserved.</p>
+    </footer>
+    <script src="/javascript/addDogPage.js"></script>
+</body>
+</html>
